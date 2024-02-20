@@ -1,0 +1,35 @@
+body{
+   
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.nav{
+width: 100%;
+height: 20%;
+background: white;
+
+}
+.iconos-post {
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+  }
+  .iconos-post i:not(:last-child) {
+    margin-right: 10px; 
+  }
+
+.img1{
+    border: 1px solid grey;
+}
+
+.content-card{
+width: 100%;
+height: 50%;
+background: white;
+}
+
+
+

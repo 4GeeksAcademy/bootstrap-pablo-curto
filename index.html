@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hola</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="encabezado">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="fa-brands fa-instagram"></i>
+            <strong>Instagram</strong>
+        </a>
+        <div class="row justify-content-end">
+          <button type="button" class="btn btn-primary btn-success mr-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Create a new post</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label"><strong>Caption:</strong></label>
+                    <input type="text" class="form-control" id="recipient-name" value="Add the caption of your post here">
+                  </div>
+                </form>
+                <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle margin" data-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"style="color:#FF0000;">Log out</a>
+            </div>
+        </div>
+          </div>
+        
+      </nav>
+    </div>
+    <div class="nav">
+
+      <nav class="nav justify-content-center">
+          <a class="nav-item nav-link active" id="gridTab" data-toggle="tab" href="#cuadricula" role="tab"
+              aria-controls="cuadricula" aria-selected="true">
+              <button class="btn btn-outline-dark border-0" aria-pressed="true">
+                  <i class="fa fa-th"></i>
+              </button>
+          </a>
+          <a class="nav-link" id="cardTab" data-toggle="tab" href="#cartas" role="tab"
+              aria-controls="cartas" aria-selected="false">
+              <button class="btn btn-outline-dark border-0" aria-pressed="true">
+                  <i class="fa fa-square"></i>
+              </button>
+          </a>
+      </nav>
+
+
+  </div>
+
+
+  <div class="content-card">
+      <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade" id="cartas" role="tabpanel" aria-labelledby="cardTab">
+              <main role="main" class="container">
+                  <div class="row d-flex justify-content-center pt-5">
+                      <div class="card" style="width: 40rem;">
+                          <div class="card-header">
+                              <h2>My First Photo</h2>
+                          </div>
+                          <img class="card-img-top" src="https://site.educa.madrid.org/cp.rodriguezdelafu.coslada//wp-content/uploads/cp.rodriguezdelafu.coslada/2019/11/raika125.jpg" alt="Imagen de Mario">
+                          <div class="card-body">
+                            <div class="iconos-post">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="card-body">
+                              <p><strong>23 Likes</strong></p>
+                              <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purpose I am learning to code with #BreatheCode</p>
+                              <p class="card-text"><small class="text-muted">
+                                Ver los comentarios...</small></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row d-flex justify-content-center pt-5">
+                      <div class="card" style="width: 40rem;">
+                          <div class="card-header">
+                              <h2>My Second Photo</h2>
+                          </div>
+                          <img class="card-img-top" src="https://site.educa.madrid.org/cp.rodriguezdelafu.coslada//wp-content/uploads/cp.rodriguezdelafu.coslada/2019/11/raika125.jpg" alt="Imagen de Mario">
+                          <div class="card-body">
+                            <div class="iconos-post">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="card-body">
+                              <p><strong>23 Likes</strong></p>
+                              <p class="card-text">This is my Second photo of the feed, this is a multi line comment for testing purpose I am learning to code with #BreatheCode</p>
+                              <p class="card-text"><small class="text-muted">
+                                Ver los comentarios...</small></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row d-flex justify-content-center pt-5">
+                      <div class="card" style="width: 40rem;">
+                          <div class="card-header">
+                              <h2>My Third Photo</h2>
+                          </div>
+                          <img class="card-img-top" src="https://site.educa.madrid.org/cp.rodriguezdelafu.coslada//wp-content/uploads/cp.rodriguezdelafu.coslada/2019/11/raika125.jpg" alt="Imagen de Mario">
+                          <div class="card-body">
+                            <div class="iconos-post">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="card-body">
+                              <p><strong>23 Likes</strong></p>
+                              <p class="card-text">This is my Third photo of the feed, this is a multi line comment for testing purpose I am learning to code with #BreatheCode</p>
+                              <p class="card-text"><small class="text-muted">
+                                Ver los comentarios...</small></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row d-flex justify-content-center pt-5">
+                      <div class="card" style="width: 40rem;">
+                          <div class="card-header">
+                              <h2>My Fourth Photo</h2>
+                          </div>
+                          <img class="card-img-top" src="https://site.educa.madrid.org/cp.rodriguezdelafu.coslada//wp-content/uploads/cp.rodriguezdelafu.coslada/2019/11/raika125.jpg" alt="Imagen de Mario">
+                          <div class="card-body">
+                            <div class="iconos-post">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="card-body">
+                              <p><strong>23 Likes</strong></p>
+                              <p class="card-text">This is my Fourth photo of the feed, this is a multi line comment for testing purpose I am learning to code with #BreatheCode</p>
+                              <p class="card-text"><small class="text-muted">
+                                Ver los comentarios...</small></p>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row d-flex justify-content-center pt-5 mb-4">
+                      <div class="card" style="width: 40rem;">
+                          <div class="card-header">
+                              <h2>My Fifth Photo</h2>
+                          </div>
+                          <img class="card-img-top" src="https://site.educa.madrid.org/cp.rodriguezdelafu.coslada//wp-content/uploads/cp.rodriguezdelafu.coslada/2019/11/raika125.jpg" alt="Imagen de Mario">
+                          <div class="card-body">
+                            <div class="iconos-post">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                              <p><strong>23 Likes</strong></p>
+                              <p class="card-text">This is my Fifth photo of the feed, this is a multi line comment for testing purpose I am learning to code with #BreatheCode</p>
+                              <p class="card-text"><small class="text-muted">
+                                Ver los comentarios...</small></p>
+                          </div>
+                      </div>
+                  </div>
+                  
+                
+              </main>
+          </div>
+
+          <div class="tab-pane fade show active" id="cuadricula" role="tabpanel" aria-labelledby="gridTab">
+              <div class="container">
+                  <div class="row">
+                    <div class="col col sm-12 col-lg-4 pb-2">
+                        <img class="img1" src="https://i.pinimg.com/736x/d4/a1/72/d4a17267c5778dacce6d2b4f1ec1c46c.jpg" width="370px" height="400px"></img>
+                    </div>
+                      <div class="col col sm-12 col-lg-4 pb-2">
+                        <img class="img1" src="https://play.nintendo.com/images/profile-mk-wario.7bf2a8f2.aead314d58b63e27.png" width="370px" height="400px"></img>
+                    </div>
+                    <div class="col col sm-12 col-lg-4 pb-2">
+                        <img class="img1" src="https://play.nintendo.com/images/profile-mk-waluigi.7bf2a8f2.aead314d58b63e27.png" width="370px" height="400px"></img>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col col sm-12 col-lg-4 pb-2">
+                          <img class="img1"src="https://pm1.aminoapps.com/6455/c038b5fd6cfda6c5aa2d0b93394ab54c21dc289e_hq.jpg" width="370px" height="400px"></img>
+                      </div>
+                      <div class="col col-sm-12 col-lg-4 pb-2 height">
+                          <img class="img1 " src="https://i.pinimg.com/564x/63/22/df/6322df7e4b62bae643052806fbb4c67e.jpg" width="370px" height="400px"></img>
+                      </div>
+                      <div class="col col sm-12 col-lg-4 pb-2">
+                          <img class="img1" src="https://i.pinimg.com/736x/6f/4b/f1/6f4bf133dd2d97ca3b0a0649c79fa5f5.jpg" width="370px" height="400px"></img>
+                      </div>
+                  </div>
+                  <div class="row mb-4">
+                      <div class="col col-sm-12 col-lg-4 pb-2">
+                          <img class="img1" src="https://i.pinimg.com/originals/86/b0/05/86b005d8832511f290e8988c1db74248.png" width="370px" height="400px"></img>
+                      </div>
+                      <div class="col col-sm-12 col-lg-4 pb-2">
+                          <img class="img1" src="https://i.pinimg.com/originals/89/60/3b/89603b5dcd1ac6558054a5522c2b85af.jpg" width="370px" height="400px"></img>
+                      </div>
+                      <div class="col col-sm-12 col-lg-4 pb-2">
+                          <img class="img1" src="https://i.pinimg.com/236x/14/4f/5c/144f5c4052bafb0a2526d9f275e9e37d.jpg" width="370px" height="400px"></img>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
